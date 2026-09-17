@@ -263,13 +263,15 @@ Top-level layout
 - `internal/awsfetcher/` — targeted AWS API callers for expected resources
 - `internal/comparator/` — comparison logic and diff model
 - `internal/report/` — report model
-- `infra/` — sample infra state(s) used for testing
+- `infra/` — sample Terraform configurations and local test state used for testing
+- `infra/s3/` — S3 test fixture folder; use the existing `main.tf` or add new `.tf` files here to test this tool with different Terraform resources
 
 Important files
 - `cmd/driftctl/main.go` — main CLI orchestration and console reporter
 - `internal/tfstate/reader.go` — robust tfstate reading (tags, instances, primary)
 - `internal/awsfetcher/fetcher.go` — S3/EC2/RDS/ELBv2 fetchers (targeted)
 - `internal/comparator/compare.go` — curated attribute comparison and tag formatting
+- `infra/s3/main.tf` — example Terraform S3 configuration created for testing; contributors can use this folder as a place to add new `.tf` files for local drift-check experiments
 
 ---
 
