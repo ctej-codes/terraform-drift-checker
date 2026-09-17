@@ -151,9 +151,9 @@ What these commands do
 - `cd` changes into the project directory.
 - `go build` compiles the Go code and places the executable at `./bin/driftctl`.
 
-Windows users (PowerShell):
+Windows users (command prompt):
 
-```powershell
+```command prompt
 go build -v -o .\bin\driftctl.exe .\cmd\driftctl
 ```
 
@@ -167,9 +167,9 @@ AWS credentials
   - `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables
   - Instance/role credentials when running on EC2/ECS
 
-Environment variables example (PowerShell):
+Environment variables example (command prompt):
 
-```powershell
+```command prompt
 $env:AWS_PROFILE = "default"
 # or
 $env:AWS_ACCESS_KEY_ID = "AKIA..."
@@ -190,7 +190,7 @@ Assumptions
 2. Build the binary (`go build` as above).
 3. Run a quick check against a local state file:
 
-```powershell
+```command prompt
 .\bin\driftctl.exe -tfstate .\infra\s3\terraform.tfstate -region us-east-1 -verbose
 ```
 
@@ -210,7 +210,7 @@ Run `driftctl` with flags:
 
 Example:
 
-```powershell
+```command prompt
 .\bin\driftctl.exe -tfstate .\infra\s3\terraform.tfstate -region us-east-1 -out .\report.json -verbose
 ```
 
@@ -223,7 +223,7 @@ Notes
 
 Sample command (Windows):
 
-```powershell
+```command prompt
 cd C:\Users\61089907\Downloads\tf-drift-detector
 .\bin\driftctl.exe -tfstate .\infra\s3\terraform.tfstate -region us-east-1 -out .\report.json -verbose
 ```
