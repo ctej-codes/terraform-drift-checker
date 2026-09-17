@@ -1,4 +1,4 @@
-# TF Drift Detector
+# Terraform Drift Detector
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![Go Version](https://img.shields.io/badge/go-1.24-blue)
 
